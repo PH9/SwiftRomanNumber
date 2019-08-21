@@ -1,15 +1,15 @@
 extension Int {
 
   var roman: String {
-    var n = self
-    var result = ""
-
     if self == 50 {
       return "L"
     }
     if self == 40 {
       return "XL"
     }
+
+    var n = self
+    var result = ""
 
     let cases = [
       (10, "X"),
