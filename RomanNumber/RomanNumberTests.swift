@@ -18,4 +18,8 @@ class RomanNumberTests: XCTestCase {
   func testRomanNumber_10_isX() {
     XCTAssertEqual("X", 10.roman)
   }
+
+  func testRomanNumber_11_isXI() {
+    XCTAssertEqual("XI", 11.roman)
+  }
 }
