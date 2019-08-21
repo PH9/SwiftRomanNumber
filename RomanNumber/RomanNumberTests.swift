@@ -9,23 +9,23 @@ class RomanNumberTests: XCTestCase {
     XCTAssertEqual("III", 3.roman)
   }
 
-  func testRomanNumber_4_to_IV() {
+  func testRomanNumber_4_is_IV() {
     XCTAssertEqual("IV", 4.roman)
   }
 
-  func testRomanNumber_5_to_V() {
+  func testRomanNumber_5_is_V() {
     XCTAssertEqual("V", 5.roman)
   }
 
-  func testRomanNumber_6_to_VI() {
+  func testRomanNumber_6_is_VI() {
     XCTAssertEqual("VI", 6.roman)
   }
 
-  func testRomanNumber_7_to_VII() {
+  func testRomanNumber_7_is_VII() {
     XCTAssertEqual("VII", 7.roman)
   }
 
-  func testRomanNumber_8_to_VIII() {
+  func testRomanNumber_8_is_VIII() {
     XCTAssertEqual("VIII", 8.roman)
   }
 
