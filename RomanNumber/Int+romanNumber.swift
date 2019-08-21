@@ -1,6 +1,9 @@
 extension Int {
 
   var roman: String {
+    if self == 90 {
+      return "XC"
+    }
     if self == 50 {
       return "L"
     }
