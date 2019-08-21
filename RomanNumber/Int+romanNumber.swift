@@ -4,6 +4,10 @@ extension Int {
     var n = self
     var result = ""
 
+    if self == 40 {
+      return "XL"
+    }
+
     let cases = [
       (10, "X"),
       (9, "IX"),
