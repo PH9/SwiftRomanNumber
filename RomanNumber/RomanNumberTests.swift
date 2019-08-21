@@ -34,4 +34,8 @@ class RomanNumberTests: XCTestCase {
   func testRomanNumber_14_isXIV() {
     XCTAssertEqual("XL", 40.roman)
   }
+
+  func testRomanNumber_50_isL() {
+    XCTAssertEqual("L", 50.roman)
+  }
 }

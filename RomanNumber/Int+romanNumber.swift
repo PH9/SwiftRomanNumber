@@ -4,6 +4,9 @@ extension Int {
     var n = self
     var result = ""
 
+    if self == 50 {
+      return "L"
+    }
     if self == 40 {
       return "XL"
     }
