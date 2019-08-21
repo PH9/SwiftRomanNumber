@@ -1,6 +1,10 @@
 extension Int {
 
   var roman: String {
+    if self == 13{
+      return "XIII"
+    }
+
     if self == 12 {
       return "XII"
     }
