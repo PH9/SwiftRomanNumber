@@ -16,3 +16,7 @@ print(romanNumber)
 ```console
 XC
 ```
+
+**Limitation**
+
+It works only integer and from `1` to `500`.
