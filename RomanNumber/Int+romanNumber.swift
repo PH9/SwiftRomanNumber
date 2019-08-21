@@ -4,27 +4,19 @@ extension Int {
     var n = self
     var result = ""
 
-    while n >= 10 {
-      n -= 10
-      result += "X"
-    }
+    let cases = [
+      (10, "X"),
+      (9, "IX"),
+      (5, "V"),
+      (4, "IV"),
+      (1, "I")
+    ]
 
-    if self == 9 {
-      return "IX"
-    }
-
-    while n >= 5 {
-      n -= 5
-      result += "V"
-    }
-
-    if self == 4 {
-      return "IV"
-    }
-
-    while n > 0 {
-      n -= 1
-      result += "I"
+    for (value, letter) in cases {
+      while n >= value {
+        n -= value
+        result += letter
+      }
     }
 
     return result
