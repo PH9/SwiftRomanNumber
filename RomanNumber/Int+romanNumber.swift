@@ -7,14 +7,12 @@ extension Int {
     if self == 90 {
       return "XC"
     }
-    if self == 50 {
-      return "L"
-    }
 
     var n = self
     var result = ""
 
     let cases = [
+      (50, "L"),
       (40, "XL"),
       (10, "X"),
       (9, "IX"),
