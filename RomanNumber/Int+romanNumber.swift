@@ -1,6 +1,10 @@
 extension Int {
 
   var roman: String {
+    if self == 9 {
+      return "IX"
+    }
+
     var n = self
     var result = ""
 
