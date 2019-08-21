@@ -6,4 +6,8 @@ class RomanNumberTests: XCTestCase {
   func testWhenEnter1_shouldReturnI() {
     XCTAssertEqual("I", 1.roman)
   }
+
+  func testWhenEnter2_shouldReturnII() {
+    XCTAssertEqual("II", 2.roman)
+  }
 }
