@@ -1,14 +1,11 @@
 extension Int {
 
   var roman: String {
-    if self == 100 {
-      return "C"
-    }
-
     var n = self
     var result = ""
 
     let cases = [
+      (100, "C"),
       (90, "XC"),
       (50, "L"),
       (40, "XL"),
