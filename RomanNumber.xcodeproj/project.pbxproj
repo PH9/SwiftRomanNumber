@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		16AAE58B230D279E007DADAC /* RomanNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AAE581230D279E007DADAC /* RomanNumber.framework */; };
-		16AAE590230D279E007DADAC /* RomanNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AAE58F230D279E007DADAC /* RomanNumberTests.swift */; };
 		16AAE592230D279E007DADAC /* RomanNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 16AAE584230D279E007DADAC /* RomanNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16E43D40230D286900ECB492 /* RomanNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AAE58F230D279E007DADAC /* RomanNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,7 @@
 		16AAE585230D279E007DADAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16AAE58A230D279E007DADAC /* RomanNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16AAE58F230D279E007DADAC /* RomanNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumberTests.swift; sourceTree = "<group>"; };
-		16AAE591230D279E007DADAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AAE591230D279E007DADAC /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				16AAE583230D279E007DADAC /* RomanNumber */,
-				16AAE58E230D279E007DADAC /* RomanNumberTests */,
 				16AAE582230D279E007DADAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,17 +72,10 @@
 			children = (
 				16AAE584230D279E007DADAC /* RomanNumber.h */,
 				16AAE585230D279E007DADAC /* Info.plist */,
+				16AAE591230D279E007DADAC /* InfoTests.plist */,
+				16AAE58F230D279E007DADAC /* RomanNumberTests.swift */,
 			);
 			path = RomanNumber;
-			sourceTree = "<group>";
-		};
-		16AAE58E230D279E007DADAC /* RomanNumberTests */ = {
-			isa = PBXGroup;
-			children = (
-				16AAE58F230D279E007DADAC /* RomanNumberTests.swift */,
-				16AAE591230D279E007DADAC /* Info.plist */,
-			);
-			path = RomanNumberTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16AAE590230D279E007DADAC /* RomanNumberTests.swift in Sources */,
+				16E43D40230D286900ECB492 /* RomanNumberTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RomanNumberTests/Info.plist;
+				INFOPLIST_FILE = RomanNumber/InfoTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,7 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RomanNumberTests/Info.plist;
+				INFOPLIST_FILE = RomanNumber/InfoTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
