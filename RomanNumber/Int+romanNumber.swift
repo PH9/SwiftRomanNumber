@@ -1,28 +1,17 @@
 extension Int {
 
   var roman: String {
-    if self == 13 {
-      return "XIII"
-    }
+    var n = self
+    var result = ""
 
-    if self == 12 {
-      return "XII"
-    }
-
-    if self == 11 {
-      return "XI"
-    }
-
-    if self == 10 {
-      return "X"
+    while n >= 10 {
+      n -= 10
+      result += "X"
     }
 
     if self == 9 {
       return "IX"
     }
-
-    var n = self
-    var result = ""
 
     while n >= 5 {
       n -= 5
