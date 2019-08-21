@@ -3,15 +3,15 @@ import XCTest
 
 class RomanNumberTests: XCTestCase {
 
-  func testWhenEnter1_shouldReturnI() {
+  func testRomanNumber_1_I() {
     XCTAssertEqual("I", 1.roman)
   }
 
-  func testWhenEnter2_shouldReturnII() {
+  func testRomanNumber_2_II() {
     XCTAssertEqual("II", 2.roman)
   }
 
-  func test3_shouldReturnIII() {
+  func testRomanNumber_3_III() {
     XCTAssertEqual("III", 3.roman)
   }
 }
