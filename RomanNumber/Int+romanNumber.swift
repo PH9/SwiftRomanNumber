@@ -1,14 +1,13 @@
 extension Int {
 
   var roman: String {
-    if self == 3 {
-      return "III"
+    var n = self
+    var result = ""
+    while n > 0 {
+      n -= 1
+      result += "I"
     }
 
-    if self == 2 {
-      return "II"
-    }
-
-    return "I"
+    return result
   }
 }
