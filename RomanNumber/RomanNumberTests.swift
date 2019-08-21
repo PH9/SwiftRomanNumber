@@ -3,7 +3,7 @@ import XCTest
 
 class RomanNumberTests: XCTestCase {
 
-  func testDummy() {
-    
+  func testWhenEnter1_shouldReturnI() {
+    XCTAssertEqual("I", 1.roman)
   }
 }

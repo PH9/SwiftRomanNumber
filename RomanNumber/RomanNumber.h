@@ -1,11 +1,3 @@
-//
-//  RomanNumber.h
-//  RomanNumber
-//
-//  Created by Wasith Theerapattrathamrong on 21/8/2562 BE.
-//  Copyright © 2562 Wasith Theerapattrathamrong. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for RomanNumber.

@@ -10,6 +10,7 @@
 		16AAE58B230D279E007DADAC /* RomanNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AAE581230D279E007DADAC /* RomanNumber.framework */; };
 		16AAE592230D279E007DADAC /* RomanNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 16AAE584230D279E007DADAC /* RomanNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16E43D40230D286900ECB492 /* RomanNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AAE58F230D279E007DADAC /* RomanNumberTests.swift */; };
+		16E43D42230D28BD00ECB492 /* Int+romanNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E43D41230D28BD00ECB492 /* Int+romanNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		16AAE58A230D279E007DADAC /* RomanNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16AAE58F230D279E007DADAC /* RomanNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumberTests.swift; sourceTree = "<group>"; };
 		16AAE591230D279E007DADAC /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
+		16E43D41230D28BD00ECB492 /* Int+romanNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+romanNumber.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				16AAE584230D279E007DADAC /* RomanNumber.h */,
 				16AAE585230D279E007DADAC /* Info.plist */,
 				16AAE591230D279E007DADAC /* InfoTests.plist */,
+				16E43D41230D28BD00ECB492 /* Int+romanNumber.swift */,
 				16AAE58F230D279E007DADAC /* RomanNumberTests.swift */,
 			);
 			path = RomanNumber;
@@ -140,6 +143,7 @@
 				TargetAttributes = {
 					16AAE580230D279E007DADAC = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					16AAE589230D279E007DADAC = {
 						CreatedOnToolsVersion = 11.0;
@@ -187,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E43D42230D28BD00ECB492 /* Int+romanNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +337,7 @@
 		16AAE596230D279E007DADAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.ph9.RomanNumber;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		16AAE597230D279E007DADAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -378,6 +386,7 @@
 		16AAE599230D279E007DADAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RomanNumber/InfoTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,6 +404,7 @@
 		16AAE59A230D279E007DADAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RomanNumber/InfoTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
