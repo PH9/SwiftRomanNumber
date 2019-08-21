@@ -1,24 +1,18 @@
 extension Int {
 
   var roman: String {
-    if self == 8 {
-      return "VIII"
+    var n = self
+    var result = ""
+
+    while n >= 5 {
+      n -= 5
+      result += "V"
     }
-    if self == 7 {
-      return "VII"
-    }
-    if self == 6 {
-      return "VI"
-    }
-    if self == 5 {
-      return "V"
-    }
+
     if self == 4 {
       return "IV"
     }
 
-    var n = self
-    var result = ""
     while n > 0 {
       n -= 1
       result += "I"
