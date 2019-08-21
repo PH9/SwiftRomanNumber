@@ -46,4 +46,8 @@ class RomanNumberTests: XCTestCase {
   func testRomanNumber_100_isC() {
     XCTAssertEqual("C", 100.roman)
   }
+
+  func testRomanNumber_400isCD() {
+    XCTAssertEqual("CD", 400.roman)
+  }
 }
