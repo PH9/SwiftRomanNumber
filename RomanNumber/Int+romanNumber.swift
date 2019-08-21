@@ -1,6 +1,6 @@
 extension Int {
 
-  var roman: String {
+  public var roman: String {
     var n = self
     var result = ""
 
